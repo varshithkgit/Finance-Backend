@@ -9,7 +9,7 @@ const cookieParse=require("cookie-parser");
 const  cors=require("cors");
 
 const corsOptions = {
-  origin: "https://finance-frontend-silk.vercel.app/",
+  origin: "*",
   credentials:true
 };
 
