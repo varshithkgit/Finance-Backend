@@ -25,12 +25,14 @@ const initializer= async ()=>{
     await Promise.all([main(),redisClient.connect()]);
     console.log("DB as connected");
 
-    app.listen(process.env.PORT_NO,()=>{
-        console.log(`Listening at port number: ${process.env.PORT_NO}`);
-    })
+    // app.listen(process.env.PORT_NO,()=>{
+    //     console.log(`Listening at port number: ${process.env.PORT_NO}`);
+    // })
 }catch(e){
     console.log("Error: "+e);
 }
 }
 
 initializer();
+
+module.exports=app;
